@@ -1,0 +1,9 @@
+archive/*
+builds/1.*
+builds/2.*
+demos/*
+devel-tools/*
+.gitignore
+.npmignore
+LICENCE
+README.md

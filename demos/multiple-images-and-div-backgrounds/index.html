@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script type="text/javascript" src="../../builds/latest/gradient-overlay.min.js"></script>
+	<style type="text/css">
+		html,body{max-width:1200px;}
+		.go-image{
+			position:relative;
+			display:block;
+			width:100%;
+		}
+		div.go-div{
+			color:#fff;
+			position:relative;
+			z-index:2;
+			width:100%;
+			height:200px;
+			background-color:#223355;
+			background-position:50% 0;
+			background-size:cover !important;
+			background-repeat:no-repeat !important;
+			visibility:hidden;
+		}
+		div.go-div.ok{
+			visibility:visible;
+			background:transparent !important;
+		}
+		div.go-div-1{
+			background-image:url('test-1024x590.png');
+		}
+		div.go-div-2{
+			background-image:url('test-1280x720.png');
+		}
+		div.go-div-3{
+			background-image:url('test-2560x1024.png');
+		}
+		canvas.go-div{
+			position:absolute;
+			z-index:1;
+		}
+	</style>
+</head>
+<body>
+	<div class="go-div go-div-1">Any div content 1.</div>
+	<div class="go-div go-div-2">Any div content 2.</div>
+	<div class="go-div go-div-3">Any div content 3.</div>
+	<img class="go-image" src="test-608x900.png" />
+	<script type="text/javascript">
+		new GradientOverlay(document.querySelector('img'), ['#000000', '#223355']);
+		GradientOverlay.Process(document.querySelectorAll('.go-div'), ['#000000', '#223355']);
+		GradientOverlay.AddAllItemsRenderedHandler(function(e){
+			var body = document.body,
+				firstElm = body.firstChild,
+				infoElm = document.createElement('div');
+			infoElm.innerHTML = "All gradient overlay effects processing takes: "+e.AllRenderedTime+" seconds.<br />Dom content loading takes: "+e.DomLoadedTime+" seconds.";
+			body.insertBefore(infoElm, body.firstChild);
+		});
+	</script>
+</body>
+</html>

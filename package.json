@@ -1,0 +1,36 @@
+{
+  "name": "gradient-overlay.js",
+  "version": "1.0.0",
+  "keywords": [
+    "canvas",
+    "gradient",
+    "coloring",
+    "image",
+    "overlay",
+    "gradient overlay",
+    "image overlay",
+    "image coloring"
+  ],
+  "description": "Create Photoshop like gradient overlay effects on any images or any div elements with positioned backgrond image.",
+  "homepage": "https://github.com/tomflidr/gradient-overlay.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomFlidr/gradient-overlay.js.git"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Tom Flídr",
+    "email": "tomflidr@gmail.com",
+    "url": "https://github.com/tomFlidr"
+  },
+  "main": "builds/latest/gradient-overlay.min.js",
+  "scripts": {
+    "install": "node install.js"
+  },
+  "dependencies": {
+    "download": "~5.0.0"
+  },
+  "devDependencies": {
+    "download": "~5.0.0"
+  }
+}
