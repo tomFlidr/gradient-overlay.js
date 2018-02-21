@@ -6,5 +6,5 @@
 
 ## Instalation
 ```shell
-npm install tomflidr/gradient-overlay.js
+npm install tomflidr/gradient-overlay
 ```
