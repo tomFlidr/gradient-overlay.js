@@ -1,6 +1,6 @@
 {
   "name": "gradient-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "canvas",
     "gradient",
@@ -11,7 +11,7 @@
     "image overlay",
     "image coloring"
   ],
-  "description": "Create Photoshop like gradient overlay effects in HTML page with canvas support from any images or any div elements with positioned backgrond.",
+  "description": "Create Photoshop like gradient overlay effects in HTML page with canvas support from any images or any div elements with positioned background.",
   "homepage": "https://github.com/tomflidr/gradient-overlay.js",
   "repository": {
     "type": "git",
